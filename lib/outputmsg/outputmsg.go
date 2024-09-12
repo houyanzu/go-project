@@ -1,3 +1,5 @@
+// 只修改msgMap，不要添加其他代码
+
 package outputmsg
 
 import (
