@@ -1,3 +1,6 @@
+// Code generated - DO NOT EDIT.
+// This file is a generated binding and any manual changes will be lost.
+
 package main
 
 import (
@@ -6,7 +9,9 @@ import (
 	"strings"
 	"unicode"
 	"github.com/gin-gonic/gin"
-	controller0 "go-project/app/api/home/user/controller"
+	controller0 "go-project/app/api/home/asset/controller"
+	controller1 "go-project/app/api/home/asset/controller"
+	controller2 "go-project/app/api/home/user/controller"
 )
 var controllers []interface{}
 
@@ -15,7 +20,9 @@ func RegisterController(controller interface{}) {
 }
 
 func init() {
-	RegisterController(controller0.UserController{})
+	RegisterController(controller0.AssetController{})
+	RegisterController(controller1.Asset2Controller{})
+	RegisterController(controller2.UserController{})
 }
 
 func Register(router *gin.Engine) {

@@ -3,3 +3,4 @@ go.sum
 .vscode
 *.json
 *.log
+bin
