@@ -1,10 +1,13 @@
 package controller
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/houyanzu/work-box/lib/output"
+)
 
 type AssetController struct {
 }
 
 func (ac AssetController) AssetDemo(c *gin.Context) {
-	c.String(200, "AssetDemo ok")
+	output.NewOutput(c, 1, nil).Out()
 }
