@@ -12,7 +12,6 @@ import (
 	"github.com/houyanzu/work-box/tool/middleware"
 	controller0 "go-project/app/api/home/asset/controller"
 	controller1 "go-project/app/api/home/user/controller"
-	controller2 "go-project/app/api/home/user/controller"
 )
 
 var controllers []interface{}
@@ -24,7 +23,7 @@ func RegisterController(controller interface{}) {
 func init() {
 	RegisterController(controller0.AssetController{})
 	RegisterController(controller1.AccountController{})
-	RegisterController(controller2.UserController{})
+	RegisterController(controller1.UserController{})
 }
 
 func Register(router *gin.Engine) {
