@@ -4,8 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type AccountController struct {}
-
+type AccountController struct{}
 
 // POST
 func (co AccountController) Register(c *gin.Context) {
@@ -22,7 +21,7 @@ func (co AccountController) Logout(c *gin.Context, userID uint) {
 	//TODO: edit
 }
 
-// POST
+// GET
 func (co AccountController) Delete(c *gin.Context, userID uint) {
 	//TODO: edit
 }
