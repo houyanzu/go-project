@@ -2,12 +2,17 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/houyanzu/work-box/lib/output"
 )
 
-type AssetController struct {
+type AssetController struct {}
+
+
+// POST
+func (co AssetController) GetAllAsset(c *gin.Context) {
+	//TODO: edit
 }
 
-func (ac AssetController) AssetDemo(c *gin.Context) {
-	output.NewOutput(c, 1, nil).Out()
+// POST
+func (co AssetController) GetMyAsset(c *gin.Context, userID uint) {
+	//TODO: edit
 }

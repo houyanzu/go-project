@@ -9,7 +9,7 @@ fi
 # 参数解析
 case $2 in
     "api")
-        ./registergen
+        ./boxgen --action routergen
         apiOut="./bin/api.linux.$1"
         go build -o "$apiOut" ./app/api/home/main.go ./app/api/home/register.go
         ;;
